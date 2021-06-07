@@ -1,5 +1,4 @@
-# tkinter-after
-Tkinterのafterについてのコード
+# tkinter-toplevel
+Tkinterのtoplevelについてのコード
 
 # 参考記事
-https://kuroro.blog/python/ngQRGzqfuyK8WaCwkGid/
