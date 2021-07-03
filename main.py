@@ -6,7 +6,7 @@ class Application(tk.Frame):
         mainWindow2 = tk.Tk()
         # メインWindow2へタイトルをつける。
         mainWindow2.title('mainWindow2')
-        # アプリ画面(メインWindow2)の位置、大きさを設定する。
+        # Window(メインWindow2)の画面サイズを設定する。
         # geometryについて : https://kuroro.blog/python/rozH3S2CYE0a0nB3s2QL/
         mainWindow2.geometry("300x200+420+0")
 
@@ -16,16 +16,20 @@ class Application(tk.Frame):
         # global subWindow
         # subWindowが初期化もしくはsubWindow(サブWindow)が存在しない場合
         # if subWindow == None or not subWindow.winfo_exists():
+
         # メインWindowに紐づくサブWindowを作成する。
         subWindow = tk.Toplevel()
         # サブWindowへタイトルをつける。
         subWindow.title('subWindow')
-        # アプリ画面(サブWindow)の位置、大きさを設定する。
+        # Window(サブWindow)の画面サイズを設定する。
         # geometryについて : https://kuroro.blog/python/rozH3S2CYE0a0nB3s2QL/
         subWindow.geometry("300x200+420+0")
-        # subWindow(サブWindow)を親要素として、Button Widgetを取り付ける。
+
+        # subWindow(サブWindow)を親要素として、Button Widgetを作成する。
+        # text : テキスト情報
+        # command : ボタンを選択した場合に、実行する関数を設定。self.getSubWindowとする。
         # Buttonについて : https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
-        button = tk.Button(subWindow, command=self.getSubWindow)
+        button = tk.Button(subWindow, text='button', command=self.getSubWindow)
         # subWindow(サブWindow)を親要素とした場合に、Button Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         button.pack()
@@ -35,7 +39,7 @@ class Application(tk.Frame):
         super().__init__(master)
         # メインWindow1へタイトルをつける。
         self.master.title("mainWindow1")
-        # アプリ画面(メインWindow1)の位置、大きさを設定する。
+        # Window(メインWindow1)の画面サイズを設定する。
         # geometryについて : https://kuroro.blog/python/rozH3S2CYE0a0nB3s2QL/
         self.master.geometry("300x200+120+0")
 
