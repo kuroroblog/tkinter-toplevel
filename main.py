@@ -14,7 +14,8 @@ class Application(tk.Frame):
     def getSubWindow(self):
         # subWindowをグローバル変数とする。
         # global subWindow
-        # subWindowが初期化もしくはsubWindow(サブWindow)が存在しない場合
+        # subWindowがNoneもしくはsubWindow(サブWindow)が存在しない場合
+        # winfo_exists() : サブWindowが存在するのか判定する関数。True(サブWindowが存在する), False(サブWindowが存在しない)が返されます。
         # if subWindow == None or not subWindow.winfo_exists():
 
         # メインWindowに紐づくサブWindowを作成する。
