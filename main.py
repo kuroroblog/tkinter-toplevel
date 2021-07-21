@@ -49,6 +49,8 @@ class Application(tk.Frame):
 
 # Tkinter初学者参考 : https://docs.python.org/ja/3/library/tkinter.html#a-simple-hello-world-program
 if __name__ == "__main__":
+    # Windowを生成する。
+    # Windowについて : https://kuroro.blog/python/116yLvTkzH2AUJj8FHLx/
     root = tk.Tk()
 
     # subWindowに関する変数の初期化
